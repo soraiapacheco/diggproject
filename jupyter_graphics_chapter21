@@ -1,0 +1,12 @@
+
+# chapter 21 - epidemics(sir and sis) model
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+data = pd.read_csv("diggnode727173.csv")
+dtnode = data[(data.Source.isin([71,72,73]))] # only nodes 71,72 and 73 like source
+dtnode
+
+
+dtnode.plot(x='timestamp', y='Target', kind='scatter')
