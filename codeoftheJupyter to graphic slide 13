@@ -1,0 +1,10 @@
+# Chapter 18 - Power Law - Long Tail - This graphic is better for explain 
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+data = pd.read_csv("diggnodestatic.csv") 
+
+plt.scatter(data.indegree, data.Id, color = 'b') # power law analysis => in degree => x and no nodes (id of the users) => y
+
+plt.show()
